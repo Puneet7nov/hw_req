@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HW Req</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script type="text/javascript" src="./js/index.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="header">
+        <p>This is header</p>
+    </div>
+
+<div class="row">
+<div class="column left">
+    <h3>Inputs Required</h3>
+    <div class="div"> 
+        <label class="label">Solution Type?</label>
+        <label for="Deployed">Deployed</label>
+        <input type="radio" name="solType" id="deployed" checked value="deployed">
+        <label for="Hosted">Hosted</label>
+        <input type="radio" name="solType" id="hosted" value="hosted">
+    </div>
+<br>
+    <div class="div"> 
+            <label class="label">Any Comparable Platform?</label>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="compPlatform" id="compPlatform" value="Yes" onclick="showhideComparablePlatform(this.value)" />
+            <label for="No">No</label>
+            <input type="radio" name="compPlatform" id="compPlatform" value="No" onclick="showhideComparablePlatform(this.value)" />
+    </div>
+<br>
+    <div class="div" style="display:none" id="platformSize">
+        <label for="platformSize" class="label">Target Platform Size</label>
+        <select id="platformSize">
+            <option value="">--Platform Size--</option>
+            <option value="small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Monster">Monster</option>
+        </select>
+    </div>
+
+<br>
+    <div class="div" style="display:none" id="platForEstimate"> 
+        <label for="platForEstimate" class="label">Use For Estimation</label>
+        <select id="platForEstimate" multiple>
+            <option value="">--Comparable Platform--</option>
+            <option value="hsbc_ldn">HSBC London</option>
+            <option value="hsbc_ny">HSBC NY</option>
+            <option value="alpha">Alpha</option>
+            <option value="cacib">CACIB</option>
+        </select>
+    </div>  
+
+<br>
+    <div class="div"> 
+            <label class="label">Multi Location Platform?</label>
+            <label for="Yes">Yes</label>
+            <input type="radio" name="multiLocationPlatform" id="Yes" value="Yes">
+            <label for="No">No</label>
+            <input type="radio" name="multiLocationPlatform" id="No" checked value="No">
+    </div>    
+    
+<br>
+    <div class="div">
+        <label for="NoOfLocation" class="label">Platform Spread Across</label>
+        <select id="NoOfLocation">
+            <option value="">--Servers In--</option>
+            <option value="two">Servers in 2 locations</option>
+            <option value="three">Servers in 3 locations</option>
+            <option value="four">Servers in 4 locations</option>
+        </select>
+    </div>    
+<br>
+    <div class="div">
+        <input type="button" class="button" value="Fetch Components">
+    </div> 
+
+<br>
+    <div class="div">
+        <select id="componentList" multiple>
+            <option value="">--Select List of Components Required--</option>
+            <option value="daemon">Daemon</option>
+            <option value="router">Router</option>
+            <option value="pxe">PXE</option>
+            <option value="refdata">Refdata</option>
+        </select>
+    </div>     
+
+</div>
+
+
+
+<div class="column right">
+    <p>This is main base</p>
+</div>
+</div>
+<div style="clear:both"></div>
+
+<div class="footer">
+        <p>This is footer</p>
+    </div>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
