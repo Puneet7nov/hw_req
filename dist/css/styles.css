@@ -1,0 +1,60 @@
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+.row {
+    width: 100%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.div {
+    text-align: left;
+}
+
+.label {
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+}
+
+.button {
+    background-color: #008CBA; 
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    padding: 0.25rem 1.75rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+}
+
+/* Left column */
+.left {
+    width: 25%;
+    text-align: center;
+    background-color: aqua;
+    height: 50rem;
+}
+
+/* Right column */
+.right {
+    width: 72%;
+    text-align: center;
+    background-color: blue;
+    height: 50rem;
+}
