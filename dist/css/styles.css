@@ -1,13 +1,16 @@
 .header {
-    background-color: #F1F1F1;
+    background-color: #000000;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+    color: #F1F1F1;
+    width: 97.5%;
 }
 
 .footer {
-    background-color: #F1F1F1;
+    background-color:ﬀﬀﬀ;
     text-align: center;
-    padding: 10px;
+    padding: 0.001rem;
+    width: 99%;
 }
 
 .row {
@@ -43,18 +46,16 @@
     font-style: regular;
 }
 
-/* Left column */
 .left {
     width: 25%;
     text-align: center;
-    background-color: aqua;
+    background-color: #fddeca;
     height: 50rem;
 }
 
-/* Right column */
 .right {
     width: 72%;
     text-align: center;
-    background-color: blue;
+    background-color: #f2f2f2;
     height: 50rem;
 }
