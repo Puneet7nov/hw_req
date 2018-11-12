@@ -3,14 +3,28 @@
     text-align: center;
     padding: 1rem;
     color: #F1F1F1;
-    width: 97.5%;
+    margin-left: 10rem;
+    margin-right: 5rem; 
+    width: 90%;   
 }
 
 .footer {
-    background-color:ﬀﬀﬀ;
+    background-color: white;
     text-align: center;
-    padding: 0.001rem;
-    width: 99%;
+    padding: 0.1rem;
+    bottom: 0;
+    color: black;
+    margin-left: 10rem;
+    margin-right: 5rem;
+    width: 90%;
+}
+
+.mainPage {
+    background-color: white;
+    margin-left: 10rem;
+    margin-right: 5rem;
+    width: 90%;
+    height: auto;
 }
 
 .row {
@@ -27,35 +41,131 @@
 }
 
 .label {
+    all: unset;
+    margin-left: 2rem;
     font-weight: bold;
     font-family: 'Source Sans Pro';
     font-style: regular;
 }
 
 .button {
+    all: unset;
+    margin-left: 2rem;
     background-color: #008CBA; 
     border: none;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     color: white;
-    padding: 0.25rem 1.75rem;
+    padding: 0.5rem 4rem 0.5rem 4rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     font-family: 'Source Sans Pro';
     font-style: regular;
 }
+
 
 .left {
     width: 25%;
     text-align: center;
     background-color: #fddeca;
-    height: 50rem;
+    display:table-cell;
+    min-height: 75rem;
+    height: auto;
+    overflow: hidden;    
 }
 
 .right {
-    width: 72%;
+    width: 75%;
+    background-color: whitesmoke;
+    display:table-cell;
+    min-height: 75rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.parent{
+    display:table;
+    margin-left: 10rem;
+    width: 90%;
+}
+
+.multiselect-container>li>a>label {
+  padding: 0.5rem 10rem 0.5rem 4rem;
+  margin-left: 1rem;
+}
+
+.dropdown {
+    all: unset;
+}
+
+.table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: color black;
+}
+
+.th {
     text-align: center;
-    background-color: #f2f2f2;
-    height: 50rem;
+    font-size: 1 rem;
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+}
+
+.thLeft {
+    text-align: left;
+    font-size: 1 rem;
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+}
+
+.td {
+    text-align: center;
+    font-size: 1 rem;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+}
+
+.tdLeft {
+    text-align: left;
+    font-size: 1 rem;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+}
+
+.inputEdit {
+    width: 20%;
+    text-align: center;
+    font-size: 1 rem;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+}
+
+.h1 {
+    all: unset;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+    font-size: 3rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: #008CBA;
+}
+
+.h2 {
+    all: unset;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.notes {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-size: 1.5rem;
 }
