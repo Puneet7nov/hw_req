@@ -87,7 +87,7 @@
             </div>
 
             <br>
-            <div class="div">
+            <div class="divRight">
                 <select id="componentList" class="dropdown" id="multiselect1" multiple="multiple"></select>
             </div>
 
@@ -100,7 +100,8 @@
         <div class="column right">
             <h1 class="h1">Hardware and OS requirements for other Server Components</h1>
             <h2>Component load</h2>
-            <p>The component load must be interpreted based on the following definitions. The reference CPU used in this document is:</p>
+            <p>The component load must be interpreted based on the following definitions. The reference CPU used in this document
+                is:</p>
             <li><b>Microsoft Windows or Linux servers:</b></li>
             <ul>Intel Xeon 5120, 1.87 GHz.</ul>
             <li><b>For Sun® Solaris® servers:</b></li>
@@ -146,6 +147,28 @@
                 </tr>
             </thead>
             <tbody id="tbody">
+            </tbody>
+        </table>
+        <div class="divButtonRight">
+            <input type="button" id='compAllocButton' class="buttonRight" value="Sample Component Allocation">
+        </div>
+        <br>
+        <h1 class="h1">Database requirements for server components</h1>
+        <br>
+        <br>
+        <p>This section summarizes the database requirements for ION components that require a relational database management
+            system (RDMBS):</p>
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="thLeft">Component Name</th>
+                    <th class="thLeft">Sizing</th>
+                    <th class="th">Cores Required</th>
+                    <th class="thLeft">Database Supported and other Information</th>
+                </tr>
+            </thead>
+            <tbody id="dbbody">
             </tbody>
         </table>
     </div>
