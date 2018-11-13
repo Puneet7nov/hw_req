@@ -40,6 +40,11 @@
     text-align: left;
 }
 
+.divRight {
+    text-align: right;
+    width: 90%
+}
+
 .label {
     all: unset;
     margin-left: 2rem;
@@ -63,6 +68,24 @@
     font-weight: bold;
     font-family: 'Source Sans Pro';
     font-style: regular;
+}
+
+.buttonRight {
+    all: unset;
+    margin-right: 10rem;    
+    background-color: #008CBA; 
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    font-style: regular;
+    
 }
 
 
@@ -100,6 +123,16 @@
     all: unset;
 }
 
+.divButtonRight {
+    margin-right: 20rem;
+    text-align: right;
+}
+
+.divRight {
+    text-align: left;
+    margin-left: 2rem;
+}
+
 .table {
     width: 70%;
     margin-left: auto;
@@ -113,6 +146,8 @@
     font-weight: bold;
     font-family: 'Source Sans Pro';
     font-style: regular;
+    background-color: #000000;
+    color: white    
 }
 
 .thLeft {
@@ -121,6 +156,8 @@
     font-weight: bold;
     font-family: 'Source Sans Pro';
     font-style: regular;
+    background-color: #000000;
+    color: white    
 }
 
 .td {
