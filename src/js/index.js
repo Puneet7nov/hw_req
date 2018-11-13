@@ -46,10 +46,6 @@ $('.button').click(function () {
     dropdown.length = 0;
 
     let defaultOption = document.createElement('option');
-  //  defaultOption.text = 'Select Components Required';
-
-  //   dropdown.add(defaultOption);
- //    dropdown.selectedIndex = 0;
 
     fetch(url)
         .then(
@@ -84,10 +80,9 @@ $('.button').click(function () {
 $('#hwButton').click(function () {
 selectedComps = $('button').prop('title');
 fetchAndLog();
+fetchAndLogDB();
 
 }); 
-
-
 
 const fetchAndLog = async () => {
     const url = `http://localhost:3000/OverAllCompInfo/${selectedComps}`;
@@ -117,7 +112,32 @@ const fetchAndLog = async () => {
        $("#tbody").append(tr+td1+td2+td3+td4+td5+td6); 
     }
 
-    
+}
 
+const fetchAndLogDB = async () => {
+    const urlDB = `http://localhost:3000/OverAllCompDBInfo/${selectedComps}`;
+    const responseDB = await fetch(urlDB);
+    const jsonDB = await responseDB.json();
+    // just log ‘json’
+    console.log(jsonDB);
+    function edit(elDB) {
+        elDB.childNodes[0].removeAttribute("disabled");
+        elDB.childNodes[0].focus();
+        window.getSelection().removeAllRanges();
+    }
+    function disable(elDB) {
+        elDB.setAttribute("disabled","");
+    }
+
+        for(var i=0;i<jsonDB.length;i++)
+    {
+        var tr="<tr>";
+        var td1="<td class=tdLeft>"+jsonDB[i]["comp_name"]+"</td>";
+        var td2="<td class=tdLeft>"+jsonDB[i]["sizing"]+"</td>";
+        var td3="<td class=td>"+jsonDB[i]["cpu_req"]+"</td>";
+        var td4="<td class=tdLeft>"+jsonDB[i]["db_support"]+"</td>";
+
+       $("#dbbody").append(tr+td1+td2+td3+td4); 
+    }
 
 }
